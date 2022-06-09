@@ -1,0 +1,337 @@
+body {
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
+}
+
+/*start title*/
+.title {
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.title span {
+  margin-right: 14px;
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+/*end title*/
+/*start carousel*/
+.carousel-indicators {
+  width: 287px;
+  top: 201px;
+  bottom: initial;
+  right: -34px;
+  left: inherit;
+  justify-content: start
+}
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  margin-right: 22px;
+  width: auto;
+  height: 19px;
+  font-family: 'Barlow Condensed';
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #D0D6F9;
+  background-color: transparent;
+  text-indent: 0;
+}
+
+.carousel-indicators button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  right: 0;
+  bottom: -10px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.carousel-indicators button:hover::after {
+  transform: scaleX(1);
+}
+
+.carousel-indicators button[aria-current="true"]::after {
+  transform: scaleX(1);
+}
+
+.planet {
+  margin: 15px auto 0;
+  width: 170px;
+  height: 170px;
+  background-size: contain;
+}
+
+.carousel-inner :nth-child(1) .planet {
+  background-image: url("../assets/destination/image-moon.png");
+}
+
+.carousel-inner :nth-child(2) .planet {
+  background-image: url("../assets/destination/image-mars.png");
+}
+
+.carousel-inner :nth-child(3) .planet {
+  background-image: url("../assets/destination/image-europa.png");
+}
+
+.carousel-inner :nth-child(4) .planet {
+  background-image: url("../assets/destination/image-titan.png");
+}
+
+.info {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #D0D6F9;
+}
+
+.info h2 {
+  margin-top: 75px;
+  margin-bottom: 2px;
+  font-family: 'Bellefair';
+  text-transform: uppercase;
+  font-size: 56px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.info p {
+  width: 315px;
+  margin: 0 auto;
+}
+
+.break {
+  margin: 31px auto 0;
+  width: 327px;
+  height: 1px;
+  background: #383B4B;
+}
+
+.stats {
+  margin-top: 28px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 28px;
+}
+
+.stats span {
+  margin-left: 2px;
+  font-family: 'Barlow Condensed';
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  color: #D0D6F9;
+}
+
+.stats p {
+  margin-top: 8px;
+  font-family: 'Bellefair';
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+/*end carousel*/
+/*start tablet adjust.*/
+@media only screen and (min-width:768px) {
+  body {
+    width: 768px;
+    background-image: url("../assets/technology/background-destination-tablet.jpg");
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .title {
+    padding: 40px 0 0 39px;
+    text-align: left;
+    font-family: 'Barlow Condensed';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+
+  .title span {
+    margin-right: 17px;
+  }
+
+  .carousel-indicators {
+    top: 387px;
+    right: 128px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+.carousel-indicators button::after{
+  bottom: -15px;
+}
+  .planet {
+    margin: 43px auto 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .info {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .info h2 {
+    margin-top: 120px;
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  .info p {
+    width: 555px;
+    margin: 8px auto;
+  }
+
+  .break {
+    margin-top: 49px;
+    width: 573px;
+  }
+
+  .stats {
+    margin: 22px auto 0;
+    width: 573px;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .stats div:nth-child(1) {
+    margin-left: 102px;
+  }
+  .stats div:nth-child(2) {
+    margin-right: 108px;
+  }
+
+  .stats span {
+    margin-left: 2px;
+    font-family: 'Barlow Condensed';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  .stats p {
+    margin-top: 8px;
+    width: auto;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+/*end tablet adjust.*/
+/*start desktop adjust.*/
+@media only screen and (min-width:1440px) {
+  body {
+    width: 1440px;
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+  }
+
+  .title {
+    padding: 75px 0 0 167px;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+  }
+
+  .title span {
+    margin-right: 24px;
+  }
+
+  .carousel-indicators {
+    top: 38px;
+    right: 108px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+.carousel-indicators button::after{
+  bottom: -15px;
+}
+  .planet {
+    margin: 82px 0 0 230px;
+    width: 445px;
+    height: 445px;
+  }
+
+  .info {
+    margin-left: 157px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .info h2 {
+    margin-top: 120px;
+    font-size: 100px;
+    line-height: 115px;
+  }
+
+  .info p {
+    width: 435px;
+    margin: 13px 0 0;
+  }
+
+  .break {
+    margin: 54px auto 0 0;
+    width: 444px;
+  }
+
+  .stats {
+    margin: 18px 0;
+    width: 444px;
+    text-align: left;
+  }
+
+  .stats div:nth-child(1) {
+    margin: 0;
+
+  }
+  .stats div:nth-child(2) {
+    margin-right: 102px;
+  }
+
+  .stats span {
+    margin-left: 0;
+  }
+
+  .stats p {
+    margin-top: 8px;
+    width: auto;
+  }
+}
+/*end desktop adjust.*/
