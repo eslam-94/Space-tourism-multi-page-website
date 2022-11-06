@@ -171,9 +171,7 @@ nav {
 /*end intro*/
 /*start footer*/
 .attribution {
-  position: absolute;
   width: 375px;
-  bottom: 0;
   font-family: 'Barlow';
   font-size: 16px;
   text-align: center;
